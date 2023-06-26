@@ -1,15 +1,22 @@
+server:
+  port: 8081
 spring:
   application:
     name: tenpo-rest-api-percentage
   datasource:
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/TENPO_API_REST_SUM
     username: tenpo
     password: tenpo2023
-    driver-class-name: org.postgresql.Driver
-    hikari:
-      connectionTimeout: 30000
-      idleTimeout: 600000
-      maxLifetime: 1800000
+  flyway:
+    locations: classpath:db/migration
+    baseline:
+      on:
+        migrate: true
+      version: 1.0.0.0
+  redis:
+    host: localhost
+    port: 6379
   jpa:
     show-sql: true
     database: postgresql

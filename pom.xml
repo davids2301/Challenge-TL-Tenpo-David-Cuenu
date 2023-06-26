@@ -16,9 +16,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<!--
 		<module>tenpo-rest-api-percentage</module>
-		-->
 		<module>tenpo-rest-api-sum</module>
 	</modules>
 
