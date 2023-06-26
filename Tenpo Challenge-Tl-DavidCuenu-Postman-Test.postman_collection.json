@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "925aa6e2-760d-41d2-973c-f1fa3e76dcb8",
+		"name": "Tenpo Challenge-Tl-DavidCuenu-Postman-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23157610"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/sum/sum-two-numbers?numberOne=5&numberTwo=5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/sum/sum-two-numbers?numberOne=5&numberTwo=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sum",
+						"sum-two-numbers"
+					],
+					"query": [
+						{
+							"key": "numberOne",
+							"value": "5"
+						},
+						{
+							"key": "numberTwo",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/history/calls-history-paginated?descendingOrder=false&numberOfRecords=5&pageNumber=0&sortBy=DATE_AND_HOUR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/history/calls-history-paginated?descendingOrder=false&numberOfRecords=5&pageNumber=0&sortBy=DATE_AND_HOUR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"history",
+						"calls-history-paginated"
+					],
+					"query": [
+						{
+							"key": "descendingOrder",
+							"value": "false"
+						},
+						{
+							"key": "numberOfRecords",
+							"value": "5"
+						},
+						{
+							"key": "pageNumber",
+							"value": "0"
+						},
+						{
+							"key": "sortBy",
+							"value": "DATE_AND_HOUR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/percentage/sum-two-numbers-and-return-value-applying-percentage-parametrized?numberOne=5&numberTwo=5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/percentage/sum-two-numbers-and-return-value-applying-percentage-parametrized?numberOne=5&numberTwo=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"percentage",
+						"sum-two-numbers-and-return-value-applying-percentage-parametrized"
+					],
+					"query": [
+						{
+							"key": "numberOne",
+							"value": "5"
+						},
+						{
+							"key": "numberTwo",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
