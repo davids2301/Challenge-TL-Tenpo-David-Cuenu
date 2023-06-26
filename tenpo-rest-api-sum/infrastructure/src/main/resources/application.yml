@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: tenpo-rest-api-sum
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
