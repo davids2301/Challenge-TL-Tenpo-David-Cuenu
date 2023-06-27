@@ -14,4 +14,4 @@ RUN mvn package
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT exec java $JAVA_OPTS -jar infrastructure/target/infrastructure-1.0.0.jar
+ENTRYPOINT exec java $JAVA_OPTS -jar infrastructure/target/percentage-infrastructure-1.0.0.jar
