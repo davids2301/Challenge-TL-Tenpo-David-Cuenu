@@ -8,9 +8,9 @@ ARG SERVER_PORT=${SERVER_PORT}
 WORKDIR /app
 COPY . .
 
-RUN mvn clean install
-RUN mvn package spring-boot:repackage
-RUN mvn package
+RUN mvn clean install -o
+RUN mvn package spring-boot:repackage -o
+RUN mvn package -o
 
 EXPOSE ${SERVER_PORT}
 
