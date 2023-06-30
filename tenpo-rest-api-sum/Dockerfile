@@ -9,4 +9,4 @@ RUN mvn package
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT exec java -jar mvn spring-boot:run -pl infrastructure
+ENTRYPOINT exec java $JAVA_OPTS -jar infrastructure/target/sum-infrastructure-1.0.0.jar

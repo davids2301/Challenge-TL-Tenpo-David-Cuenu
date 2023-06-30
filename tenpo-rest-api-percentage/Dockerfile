@@ -14,4 +14,4 @@ RUN mvn package
 
 EXPOSE ${SERVER_PORT}
 
-ENTRYPOINT exec mvn spring-boot:run -pl infrastructure
+ENTRYPOINT exec java $JAVA_OPTS -jar infrastructure/target/percentage-infrastructure-1.0.0.jar
